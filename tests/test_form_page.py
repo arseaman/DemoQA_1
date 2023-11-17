@@ -10,5 +10,4 @@ class TestFormPage:
         fill_form = FillFormPage(driver, 'https://demoqa.com/automation-practice-form')
         fill_form.open_page()
         fill_form.fill_student_registration_form()
-        driver.quit()
         
