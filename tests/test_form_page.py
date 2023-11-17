@@ -11,3 +11,4 @@ class TestFormPage:
         fill_form.open_page()
         fill_form.fill_student_registration_form()
         driver.quit()
+        
