@@ -14,7 +14,7 @@ def driver():
     }
     options.add_experimental_option('w3c', True)
     options.add_experimental_option('cloud:options', cloud_options)
-    cloud_url = 'http://192.168.0.107:4444/wd/hub'
+    cloud_url = 'http://54.174.220.59:4444/wd/hub'
     driver = webdriver.Remote(cloud_url, options=options)
     driver.maximize_window()
     yield driver
