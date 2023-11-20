@@ -1,13 +1,14 @@
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
+
+desiredCapabilities={
+"browserName":"chrome"
+}
 
 @pytest.fixture()
 def driver():
-    options = Options()
-    options.add_argument("--headless")
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Remote(command_executor='http://192.168.0.107:4444/wd/hub', desired_capabilities = desiredCapabilities)
     driver.maximize_window()
     yield driver
     driver.quit()
