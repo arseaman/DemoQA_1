@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 
-desiredCapabilities={
+desiredCapabilities = {
 "browserName":"chrome"
 }
 
