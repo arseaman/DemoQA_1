@@ -7,7 +7,8 @@ class TestFormPage:
 
 
     def test_form_fill(self, driver):
-        fill_form = FillFormPage(driver, 'https://demoqa.com/automation-practice-form')
+        fill_form = FillFormPage(driver, 'https://google.com')
         fill_form.open_page()
+        sleep(60)
         fill_form.fill_student_registration_form()
         

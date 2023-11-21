@@ -28,7 +28,7 @@ def driver():
         'build': 'my_test_build',
         'name': 'my_test_name'
     }
-    cloud_url = 'http://172.31.42.69:4444/wd/hub'
+    cloud_url = 'http://192.168.0.107:4444/wd/hub'
     options.set_capability('cloud:options', cloud_options)
     driver = webdriver.Remote(cloud_url, options=options)
     driver.maximize_window()
